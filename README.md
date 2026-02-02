@@ -4,6 +4,11 @@
 
 # thèmes 
 - Gestion des utilisateurs
+  "Gestion des processus de traitement des demandes - Lucas"
+  "Amélioration du processus de prestation de service - Dylan"
+  "Standardisation des processus de service - Jean-christophe"
+  "Suivi et contrôle des services - Oleksii"
+
 - Gestion des services et processus
 
 # Objectif
@@ -77,3 +82,8 @@ Les contributions sont les bienvenues !
 * Nom – Santos Lucas 
 
 ---
+
+# sources 
+
+-chat gpt
+-commandeinline
