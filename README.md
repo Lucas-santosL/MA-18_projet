@@ -16,7 +16,7 @@ Explique en quelques lignes le but principal du projet et le problème qu’il r
 -Jean-christophe
 -Oleksii
 
-# 🛠️ Technologies utilisées
+# Technologies utilisées
 
 * Langage / Framework
 * Librairie
