@@ -10,6 +10,12 @@
 
 L’objectif de cet exercice est de mettre en place un mécanisme de suivi des services Windows et d’enregistrer les résultats des contrôles dans un fichier texte. Le script doit être capable de créer automatiquement le fichier de journalisation sur le disque C: s’il n’existe pas.
 
+# Description du fonctionnement
+
+Le script vérifie une liste de services Windows définis comme importants pour le système. Pour chaque service, il contrôle son existence et son état de fonctionnement.
+Si un service ne fonctionne pas correctement, le script tente automatiquement de le remettre en service.
+Toutes les vérifications et actions effectuées doivent être enregistrées dans un fichier texte situé sur le disque C:. Si ce fichier n’existe pas au moment de l’exécution, le script doit le créer avant de commencer les contrôles.
+
 # collaborateurs
 -Lucas 
 -Dylan
