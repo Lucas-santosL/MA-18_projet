@@ -48,19 +48,19 @@ Le script doit :
 L’objectif de cet exercice est de comprendre comment automatiser certaines tâches avec PowerShell.  
 
 ### Variables
-Les variables servent à **stocker des informations temporaires** dans un script, comme un nom d’utilisateur ou un chemin. Cela permet de réutiliser ces données facilement sans les réécrire.
+Les variables servent à stocker des informations temporaires dans un script, comme un nom d’utilisateur ou un chemin. Cela permet de réutiliser ces données facilement sans les réécrire.
 
 ### Gestion des dossiers et fichiers
-PowerShell permet de **créer, modifier et organiser des dossiers et fichiers** automatiquement. Automatiser ces actions évite les erreurs et gagne du temps par rapport à une manipulation manuelle.
+PowerShell permet de créer, modifier et organiser des dossiers et fichiers automatiquement. Automatiser ces actions évite les erreurs et gagne du temps par rapport à une manipulation manuelle.
 
 ### Messages et retours
-Afficher des messages dans la console permet de **suivre l’exécution du script** et de confirmer que les actions ont bien été réalisées.
+Afficher des messages dans la console permet de suivre l’exécution du script et de confirmer que les actions ont bien été réalisées.
 
 ### Gestion des dates
-Inclure la date dans les noms de dossiers ou fichiers permet de **suivre l’historique des opérations** et d’éviter d’écraser des données existantes.
+Inclure la date dans les noms de dossiers ou fichiers permet de suivre l’historique des opérations et d’éviter d’écraser des données existantes.
 
 ### Journaux d’activité
-Conserver un fichier de log permet de **documenter les actions effectuées** par le script, ce qui est utile pour le suivi et le débogage.
+Conserver un fichier de log permet de documenter les actions effectuées par le script, ce qui est utile pour le suivi et le débogage.
 
 ### vidéo 
 vous pouvez consulter cette vidéo pour comprendre la création de dossier en PowerShell: [Lien YouTube](https://www.youtube.com/watch?v=oWZ6Jzn1TbE).
