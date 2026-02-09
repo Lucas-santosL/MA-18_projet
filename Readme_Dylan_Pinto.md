@@ -1,4 +1,4 @@
-Exercice 1 : Automatisation d’un service simple
+
 # 1.Analyse
 
 ### Sujet retenu: <br> 
