@@ -36,8 +36,7 @@ L’objectif est d’apprendre que PowerShell peut remplacer une action manuelle
 ### Objectif
 Automatiser un service simple : créer un dossier pour un utilisateur et générer un fichier de confirmation.
 
-### Travail demandé
-Dans le script, modifier la variable `$NomUtilisateur`.  
+### Travail demandé 
 Le script doit :
 - Créer un dossier pour l’utilisateur
 - Créer un fichier `confirmation.txt` dedans
