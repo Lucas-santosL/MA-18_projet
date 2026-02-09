@@ -29,10 +29,7 @@ L’objectif est d’apprendre que PowerShell peut remplacer une action manuelle
 ### Message affiché en fin de service:<br>
 ● Write-Host<br>
 
-# 4.2 Consigne Exercice 1
-
-## Exercice 1 : Création d’un dossier utilisateur automatisé
-
+# 3.Consigne Exercice 1  Création d’un dossier utilisateur automatisé
 ### Objectif
 Automatiser un service simple : créer un dossier pour un utilisateur et générer un fichier de confirmation.
 
