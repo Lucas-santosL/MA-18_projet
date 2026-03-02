@@ -83,7 +83,4 @@ Les contributions sont les bienvenues !
 
 ---
 
-# sources 
 
--chat gpt
--commandeinline
