@@ -1,1 +1,63 @@
-# Titre
+# Sujet 
+
+### Le sujet porte sur l’automatisation d’un service de surveillance système : <br>
+vérifier automatiquement l’état de services Windows importants et enregistrer les résultats dans un fichier journal.
+Ce service correspond à une tâche d’administration système intermédiaire.
+L’objectif est d’apprendre que PowerShell peut remplacer une vérification manuelle par une action automatisée, plus rapide, fiable et organisée.
+
+## Notions PowerShell utilisées
+Les variables pour stocker des informations:<br>
+● $services<br>
+● $logFile<br>
+● $serviceName<br>
+● $message<br>
+
+Vérification de l’existence d’un fichier :<br>
+● Test-Path<br>
+Création d’un fichier :<br>
+● New-Item -ItemType File<br>
+Parcours d’une liste :<br>
+● foreach<br>
+Vérification d’un service Windows :<br>
+● Get-Service<br>
+Démarrage d’un service :<br>
+● Start-Service<br>
+Gestion des erreurs :<br>
+● try { } catch { }<br>
+Écriture dans un fichier :<br>
+● Add-Content<br>
+Dates automatiques :<br>
+● Get-Date<br>
+Message affiché en fin de service :<br>
+● Write-Output<br>
+
+## Consigne Exercice 2 Surveillance automatique des services Windows
+###Objectif
+Automatiser la vérification de services Windows importants et générer un fichier de suivi.
+## Travail demandé
+Le script doit :
+Vérifier si les services sont en cours d’exécution
+-Redémarrer automatiquement un service arrêté
+-Indiquer si un service n’existe pas
+-Créer le fichier ServiceLog.txt s’il n’existe pas
+-Enregistrer toutes les actions dans C:\ServiceLog.txt
+-Afficher un message de fin
+## Améliorations demandées
+-Ajouter plus de services à surveiller
+-Ajouter un compteur d’erreurs
+-Planifier l’exécution automatique du script
+-Ajouter un système d’alerte
+
+## Explications théoriques
+L’objectif de cet exercice est de comprendre comment automatiser la surveillance du système avec PowerShell.
+
+### Variables
+Les variables permettent de stocker temporairement des informations comme le nom d’un service ou le chemin d’un fichier.
+### Gestion des services
+PowerShell permet de vérifier et contrôler les services Windows automatiquement.
+### Messages et retours
+Afficher un message final permet de confirmer que la vérification est terminée.
+### Gestion des dates
+Inclure la date permet de savoir exactement quand chaque action a été réalisée.
+### Journaux d’activité
+Un fichier de log permet de conserver un historique des vérifications effectuées pour le suivi et le dépannage.
