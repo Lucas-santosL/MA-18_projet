@@ -1,1 +1,8 @@
+Objectif
 
+L’objectif de ce script est de mettre en place un mécanisme automatique de surveillance des services Windows essentiels.
+Il permet de :
+Vérifier si certains services importants sont en cours d’exécution.
+Redémarrer automatiquement un service s’il est arrêté.
+Enregistrer toutes les actions et les résultats dans un fichier journal (log).
+Ce script garantit ainsi le bon fonctionnement du système et assure une traçabilité des vérifications effectuées.
