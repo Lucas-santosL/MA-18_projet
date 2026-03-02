@@ -1,10 +1,10 @@
-1. Analyse
+# 1. Analyse
 
 Sujet choisie :
 Le sujet porte sur la gestion et l’automatisation du traitement des demandes utilisateurs.
 L’objectif est de créer un petit service informatique qui permet de suivre, modifier et filtrer des demandes via PowerShell. Ce service correspond à une tâche de support intermédiaire. L’idée est d’apprendre que PowerShell peut remplacer un suivi manuel des demandes par un processus automatisé, plus rapide, fiable et organisé.
 
-2. Notions PowerShell utilisées
+## 2. Notions PowerShell utilisées
 
 Variables – pour stocker des informations sur les demandes :
 
@@ -34,7 +34,7 @@ Dates automatiques (optionnel pour le suivi ou les logs) :
 
 Get-Date – pour inclure l’heure ou la date d’une action
 
-3. Consigne Exercice – Gestion des demandes automatisée
+## 3. Consigne Exercice – Gestion des demandes automatisée
 
 Objectif :
 Automatiser un petit service : gérer les demandes utilisateurs (création, suivi, modification de statut et filtrage).
@@ -58,7 +58,7 @@ Inclure la date dans les logs ou dans les rapports
 
 Ajouter un menu interactif pour créer, modifier ou supprimer des demandes
 
-4. Explications théoriques
+## 4. Explications théoriques
 
 Variables :
 Les variables permettent de stocker temporairement des informations comme le nom du demandeur ou le type de demande. Cela évite de réécrire plusieurs fois la même information et facilite la gestion des données.
@@ -75,5 +75,5 @@ La possibilité de filtrer par statut ou de modifier une demande rend le process
 Journaux et dates :
 Conserver un fichier de log et inclure la date des opérations permet de suivre l’historique des actions et d’améliorer le suivi du service.
 
-5. Auteur Readme
+## 5. Auteur Readme
    Lucas 
