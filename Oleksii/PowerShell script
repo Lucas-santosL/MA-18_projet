@@ -1,0 +1,31 @@
+# Liste des services importants
+$services = @("Spooler", "wuauserv", "WinDefend")
+
+# Chemin du fichier log
+$logFile = "C:\ServiceLog.txt"
+
+# Vérifier si le fichier existe, sinon le créer
+if (!(Test-Path $logFile)) {
+    New-Item -Path $logFile -ItemType File -Force
+    Add-Content -Path $logFile -Value "$(Get-Date) - Fichier log créé."
+}
+foreach ($serviceName in $services) {
+
+    try {
+        $service = Get-Service -Name $serviceName -ErrorAction Stop
+
+        if ($service.Status -eq "Running") {
+            $message = "$(Get-Date) - $serviceName fonctionne correctement."
+        }
+        else {
+            Start-Service -Name $serviceName
+            $message = "$(Get-Date) - $serviceName était arrêté. Service redémarré."
+        }
+    }
+    catch {
+        $message = "$(Get-Date) - $serviceName n'existe pas sur ce système."
+    }
+
+    Add-Content -Path $logFile -Value $message
+}
+Write-Output "Vérification terminée. Consultez le fichier log."
