@@ -2,10 +2,27 @@
 # 1.Analyse
 
 ### Sujet retenu: <br> 
-Le sujet porte sur l’automatisation d’un petit service informatique : <br>
-créer un dossier pour un utilisateur et générer un fichier de confirmation.
-Ce service correspond à une tâche de support intérmediaire.
-L’objectif est d’apprendre que PowerShell peut remplacer une action manuelle par une action automatisée, plus rapide,fiable,organisée
+Ce projet porte sur l’automatisation d’un service simple mais essentiel dans un environnement informatique : créer un dossier utilisateur de manière systématique, générer des fichiers associés et tracer l’opération dans un journal.
+L’objectif principal est de montrer comment PowerShell peut remplacer une manipulation manuelle par un processus automatisé, plus rapide, plus fiable et surtout reproductible.
+Dans un contexte professionnel, la création de dossiers utilisateurs fait partie des tâches récurrentes d’un service informatique. Réaliser cette opération manuellement peut entraîner des erreurs (mauvais nom, emplacement incorrect, fichiers oubliés). L’automatisation permet donc :
+
+un gain de temps, surtout lorsque l’opération doit être répétée régulièrement ;
+une réduction des erreurs humaines, car les instructions sont toujours exécutées de la même manière ;
+une meilleure organisation, notamment en ajoutant la date aux dossiers et en générant un fichier de log ;
+une traçabilité complète, ce qui est important dans les environnements professionnels.
+
+Ce script constitue une introduction pratique à plusieurs notions fondamentales de PowerShell.
+Il permet de comprendre :
+
+comment déclarer et utiliser des variables pour stocker des informations dynamiques,
+comment créer automatiquement des dossiers et des fichiers,
+comment insérer des informations dans les fichiers (par exemple, la date ou des confirmations),
+comment afficher un message de fin pour signaler à l'utilisateur que le service s'est déroulé correctement,
+comment générer un log pour garder un historique des opérations effectuées.
+
+L’ajout de la date au nom du dossier est également un élément clé :
+il permet de différencier facilement les interventions, d’éviter les doublons et de conserver une organisation chronologique.
+En résumé, cet exercice montre comment PowerShell peut automatiser une procédure simple de support informatique et constitue une base solide avant de passer à des scripts plus avancés utilisés dans les services IT professionnels.
 
 
 # 2. Notions PowerShell utilisées
