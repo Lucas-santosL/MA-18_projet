@@ -1,5 +1,5 @@
 
-# Résumé – Oleksii
+# Résumé
 
 Dans notre exercice, le script crée automatiquement un dossier pour un service en utilisant le nom de l’utilisateur et la date. La commande New-Item permet de créer le dossier.
 
