@@ -89,7 +89,7 @@ Inclure la date dans les noms de dossiers ou fichiers permet de suivre l’histo
 Conserver un fichier de log permet de documenter les actions effectuées par le script, ce qui est utile pour le suivi et le débogage.
 
 ### vidéo 
-vous pouvez consulter cette vidéo pour comprendre la création de dossier en PowerShell: [Lien YouTube](https://www.youtube.com/watch?v=oWZ6Jzn1TbE).
+vous pouvez consulter cette vidéo pour comprendre la création de dossier en PowerShell: [Lien YouTube]([https://www.youtube.com/watch?v=oWZ6Jzn1TbE](https://teams.microsoft.com/l/message/19:6a681bae-764f-48de-b341-59cd27edd092_73106b23-ce21-4623-a757-4fcfeb57a141@unq.gbl.spaces/1773652396694?context=%7B%22contextType%22%3A%22chat%22%7D)).
 
 ### Écriture dans un fichier:<br>
 ● Out-File<br>
