@@ -1,62 +1,67 @@
-# Contexte
-Vous êtes technicien système dans une PME.
-La direction souhaite standardiser le processus de création d’utilisateurs locaux Windows (onboarding) afin que toutes les arrivées soient traitées de la même manière, avec les mêmes règles et la même traçabilité.
+1.Analyse
+Sujet retenu:
+Le sujet porte sur l’automatisation d’un petit service informatique :
+créer un dossier pour un utilisateur et générer un fichier de confirmation. Ce service correspond à une tâche de support intérmediaire. L’objectif est d’apprendre que PowerShell peut remplacer une action manuelle par une action automatisée, plus rapide,fiable,organisée
 
-Votre mission est de mettre en place un couple fichier CSV + script PowerShell qui permet de créer les utilisateurs de façon standardisée.
+2. Notions PowerShell utilisées
+Les variables pour stocker des informations:
+● $NomUtilisateur
+● $Chemin
 
-# Fichier fourni
-On vous fournit un fichier users.csv avec le séparateur ; contenant les colonnes suivantes :
-- Login
-- FullName
-- Description
-- IsEnabled
+Création d’un dossier :
+● New-Item -ItemType Directory
 
-# Travail demandé
-Vous devez écrire un script PowerShell nommé Create-StandardUsers.ps1 qui :
-## Vérifications initiales
-- Vérifie la présence du fichier users.csv dans le même dossier que le script.
-- Vérifie que le fichier contient exactement les colonnes attendues : Login, FullName, Description, IsEnabled.
-- En cas de problème (fichier absent, colonnes incorrectes), affiche un message d’erreur clair et arrête l’exécution.
+Écriture d'un dossier:
+● New-Item -ItemType Directory
 
-## Création / mise à jour des comptes utilisateurs
-- Importe le contenu du CSV.
-- Pour chaque ligne du CSV :
-  - Vérifie si un utilisateur avec le Login indiqué existe déjà en local.
-  - Si l’utilisateur n’existe pas :
-    - Crée un compte local avec New-LocalUser (ou New-ADUser si vous travaillez en Active Directory, selon le contexte du TP).
-    - Utilise le champ FullName comme nom complet.
-    - Applique systématiquement une description au format :
-    - Employé – <FullName> (même si la description du CSV est différente).
-    - Définit l’état du compte (activé/désactivé) selon la valeur de IsEnabled (True = activé, False = désactivé).
-  - Si l’utilisateur existe déjà :
-    - Ne le recrée pas, mais met à jour au minimum la description et l’état (activé/désactivé) pour respecter les règles standard.
+Écriture dans un fichier:
+● Out-File
 
-## Journalisation (logs)
-- Crée (ou complète) un fichier de log : C:\Logs\UserProvisioning.log.
-- Pour chaque utilisateur traité, écrit une ligne contenant au minimum :
-  - Date et heure
-  - Login
-  - Action réalisée (Créé, Déjà existant – mis à jour, Erreur)
-  - Résultat (OK ou KO)
-  - Message d’erreur éventuel.
- 
-## Rapport de fin
-- Génère un fichier UserProvisioningReport.csv récapitulant le traitement, avec par exemple les colonnes :
-  - Login
-  - Status (Créé, Existant, Erreur)
-  - Enabled (True/False)
-  - Message (optionnel, pour les détails ou les erreurs).
+Dates automatiques:
+● Get-Date
 
-# Contraintes (pour illustrer la standardisation)
-- Le script ne doit jamais créer ou modifier un compte sans passer par les informations du CSV.
-- Le format des logs doit être identique pour chaque ligne (même ordre d’informations, même structure de texte).
-- Les mêmes règles métier doivent s’appliquer pour tous les utilisateurs :
-  - Même format de description.
-  - Même logique d’activation/désactivation.
-  - Même mode de traitement en cas d’erreur (message + log).
- 
-# Variante (optionnelle, niveau avancé)
-Pour aller plus loin, vous pouvez :
-  - Ajouter automatiquement chaque nouvel utilisateur à un groupe local standard (par exemple EmployesStd) avec Add-LocalGroupMember.
-  - Ajouter un paramètre -DryRun à votre script :
-      - Quand -DryRun est utilisé, le script lit le CSV, simule toutes les actions, écrit les logs et le rapport, mais ne crée ni ne modifie réellement aucun compte.
+Message affiché en fin de service:
+● Write-Host
+
+3.Consigne Exercice 1 Création d’un dossier utilisateur automatisé
+Objectif
+Automatiser un service simple : créer un dossier pour un utilisateur et générer un fichier de confirmation.
+
+Travail demandé
+Le script doit :
+
+Créer un dossier pour l’utilisateur
+Créer un fichier confirmation.txt dedans
+Afficher un message de fin
+Améliorations demandées
+Ajouter la date dans le nom du dossier
+Créer un fichier log.txt dans C:\Service qui garde une trace du service effectué
+Explications théoriques
+L’objectif de cet exercice est de comprendre comment automatiser certaines tâches avec PowerShell.
+
+Variables
+Les variables servent à stocker des informations temporaires dans un script, comme un nom d’utilisateur ou un chemin. Cela permet de réutiliser ces données facilement sans les réécrire.
+
+Gestion des dossiers et fichiers
+PowerShell permet de créer, modifier et organiser des dossiers et fichiers automatiquement. Automatiser ces actions évite les erreurs et gagne du temps par rapport à une manipulation manuelle.
+
+Messages et retours
+Afficher des messages dans la console permet de suivre l’exécution du script et de confirmer que les actions ont bien été réalisées.
+
+Gestion des dates
+Inclure la date dans les noms de dossiers ou fichiers permet de suivre l’historique des opérations et d’éviter d’écraser des données existantes.
+
+Journaux d’activité
+Conserver un fichier de log permet de documenter les actions effectuées par le script, ce qui est utile pour le suivi et le débogage.
+
+vidéo
+vous pouvez consulter cette vidéo pour comprendre la création de dossier en PowerShell: Lien YouTube.
+
+Écriture dans un fichier:
+● Out-File
+
+Dates automatiques:
+● Get-Date
+
+Message affiché en fin de service:
+● Write-Host
