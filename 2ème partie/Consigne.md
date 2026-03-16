@@ -5,19 +5,23 @@
 Ce projet porte sur l’automatisation d’un service simple mais essentiel dans un environnement informatique : créer un dossier utilisateur de manière systématique, générer des fichiers associés et tracer l’opération dans un journal.
 L’objectif principal est de montrer comment PowerShell peut remplacer une manipulation manuelle par un processus automatisé, plus rapide, plus fiable et surtout reproductible.
 Dans un contexte professionnel, la création de dossiers utilisateurs fait partie des tâches récurrentes d’un service informatique. Réaliser cette opération manuellement peut entraîner des erreurs (mauvais nom, emplacement incorrect, fichiers oubliés). L’automatisation permet donc :
-
+<br>
 un gain de temps, surtout lorsque l’opération doit être répétée régulièrement ;
 une réduction des erreurs humaines, car les instructions sont toujours exécutées de la même manière ;
 une meilleure organisation, notamment en ajoutant la date aux dossiers et en générant un fichier de log ;
 une traçabilité complète, ce qui est important dans les environnements professionnels.
-
+<br>
 Ce script constitue une introduction pratique à plusieurs notions fondamentales de PowerShell.
 Il permet de comprendre :
-
+<br>
 comment déclarer et utiliser des variables pour stocker des informations dynamiques,
+<br>
 comment créer automatiquement des dossiers et des fichiers,
+<br>
 comment insérer des informations dans les fichiers (par exemple, la date ou des confirmations),
+<br>
 comment afficher un message de fin pour signaler à l'utilisateur que le service s'est déroulé correctement,
+<br>
 comment générer un log pour garder un historique des opérations effectuées.
 
 L’ajout de la date au nom du dossier est également un élément clé :
